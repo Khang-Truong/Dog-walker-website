@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pets Lovers</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="pets.css">
+    <link rel="icon" href="images/favicon1.png" type="image/ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="register_image">
+            <h1>Welcome to Pet's House</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a class="button" href="project.html">Home</a></li>
+                <li><a class="button" href="Dogs.html">Dogs</a></li>
+                <li><a class="button" href="Cats.html">Cats</a></li>
+                <li><a class="button" href="Tips.html">Tips</a></li>
+                <li><a class="button" href="Pet_Sitter.html">Find a pet sitter</a></li>
+                <li><a class="button" href="Register.html">Registration</a></li>
+            </ul>
+        </nav>
+        <div id="float_left">
+            <article>
+                <h3>Article</h3>
+                <time datetime="2021-01-12">Jan 12, 2021</time>
+                Three dogs was recused from the forest: <br>"
+                According to their owner, He took a walk with three dogs
+                in the street near the forest. Then they run to the forest and disappeared.
+                Finally, after 2 days finding, they found them. All of them are good. "
+            </article>
+        </div>
+
+        <main>
+            <h2>A register form</h2>
+            <p>Please fill in the form. Required values are marked by an asterisk (*)</p>
+            <div>
+                <form method="post" id="cus_info">
+                    <table>
+                        <tr>
+                            <td><label for="fName">1. First name*</label></td>
+                            <td><input type="text" name="fName" id="fName" placeholder="your first name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lName">2. Last name*</label></td>
+                            <td><input type="text" name="lName" id="lName" placeholder="your last name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">3. Gender</label></td>
+                            <td><input type="text" name="gender" id="gender" list="gender-suggestions"
+                                    placeholder="enter or choose">
+                                <datalist id="gender-suggestions">
+                                    <option value="Male" label="Male">
+                                    <option value="Female" label="Female">
+                                    <option value="Other" label="Other"></option>
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="add">4. Address*</label></td>
+                            <td><input type="text" name="add" id="add" placeholder="123 Kingsway, Vancouver, V5P 2Y2"
+                                    size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="state">5. State</label></td>
+                            <td><select name="state" id="state" multiple size="3">
+                                    <option value="Ontario">Ontario</option>
+                                    <option value="Québec">Québec</option>
+                                    <option value="British Columbia">British Columbia</option>
+                                    <option value="Manitoba">Manitoba</option>
+                                    <option value="Saskatchewan">Saskatchewan</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="myDate">6. Date of birth</label></td>
+                            <td><input type="date" name="myDate" id="myDate"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mobile">7. Phone number</label></td>
+                            <td><input type="tel" name="mobile" id="mobile" placeholder="(+1) xxx-xxx-xxxx"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">8. Email*</label></td>
+                            <td><input type="email" name="email" id="email" size="30" value="def@gmail.com"
+                                    placeholder="abc@gmail.com" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password_create">9. Password*</label></td>
+                            <td><input type="password" name="password_create" id="password_create" size="30"
+                                    placeholder="password" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password_confirm">10. Confirm password*</label></td>
+                            <td><input type="password" name="password_confirm" id="password_confirm" size="30"
+                                    placeholder="confirm password" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>11. Do you have any pets?</label></td>
+                            <td><label><input type="radio" name="pets" id="yes" value="yes" checked>Yes</label>
+                                <label><input type="radio" name="pets" id="no" value="no">No</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="myPets">12. How many pets do you have? (If the answer for the question above is
+                                    yes,
+                                    answer
+                                    this question.)</label></td>
+                            <td><input type="number" name="myPets" id="myPets" min="1" max="50" step="1" value="1"></td>
+                        </tr>
+                        <tr>
+                            <td><label>13. Type of pets do you have?</label></td>
+                            <td><input type="checkbox" id="typedogs" name="type" value="dogs">
+                                <label for="typedogs">Dogs</label>
+                                <input type="checkbox" id="typecats" name="type" value="cats">
+                                <label for="typecats">Cats</label>
+                                <input type="checkbox" id="typeothers" name="type" value="others">
+                                <label for="typeothers">Others</label></td>
+                        </tr>
+                        <tr>
+                            <td><label for="why">14. Why do you join this website? </label></td>
+                            <td><textarea name="why" id="why" rows="7" cols="55">Enter your answers here:</textarea></td>
+                        </tr>
+                    </table>
+                    <input type="submit" name="submit" value="Submit" id="btnSubmit">
+                    <input type="reset" value="Cancel">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <hr>
+            <i>Name: Tuyet Khang Truong<br>
+                Student ID: 300324577<br>
+                Section: 004
+            </i>
+        </footer>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>

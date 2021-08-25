@@ -1,0 +1,265 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-image: linear-gradient(to right, #abfae6, #ffffff, #abfae6);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#wrapper {
+	width: 80%;
+	margin: auto;
+	background-color: white;
+	color: #21866d;
+}
+
+/* format nav  */
+nav {
+	width: 80%;
+	margin-left: 15%;
+}
+nav li {
+	display: inline-block;
+}
+.button {
+	padding: 0.5em;
+	font-size: 1em;
+	border: 1px solid #1ef1bd;
+}
+nav ul {
+	list-style-type: none;
+	padding: 0.5em;
+}
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+}
+nav a:link {
+	color: #21866d;
+}
+nav a:visited {
+	color: black;
+}
+nav a:hover {
+	color: #1ef1bd;
+	background-color: #abfae6;
+}
+nav a:focus {
+	color: red;
+}
+nav a:active {
+	color: rgb(95, 23, 228);
+}
+/* format the left column */
+#float_left {
+	text-align: justify;
+	padding-left: 1em; 
+	padding-right: 1em;
+	width: 15%;
+	height: 100%;
+	float: left;
+	border-collapse: collapse;
+}
+/* format the main column */
+main {
+	width: 60%;
+	height: 100%;
+	float: left;
+	border-collapse: collapse;
+	text-align: justify;
+}
+/* format the right column */
+#float_right {
+	width: 25%;
+	height: 100%;
+	position: relative;
+	float: right;
+	border-collapse: collapse;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+/* format footer  */
+footer {
+	font-size: 0.7em;
+	text-align: center;
+	clear: both;
+}
+
+/* format project.html */
+#home {
+	background-image: url(images/home_header.png);
+	background-size: 100% 100%;
+	height: 350px;
+	color: #21866d;
+	text-indent: 1em;
+	background-color: rgb(30, 241, 189, 0.5);
+}
+#img_float_right {
+	float: right;
+	height: auto;
+	text-align: center;
+	opacity: 0.9;
+}
+
+/* format dogs.html and cats.html */
+#dogs {
+	background-image: url(images/dogs_header.jpg);
+	background-size: 100% 100%;
+	height: 300px;
+	color: #21866d;
+	text-indent: 1em;
+	background-color: #1ef1bd;
+}
+#cats {
+	background-image: url(images/cats_header.jpeg);
+	background-size: 100% 100%;
+	height: 300px;
+	color: #21866d;
+	text-indent: 1em;
+	background-color: #1ef1bd;
+}
+#img_section1 {
+	float: right;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	opacity: 0.9;
+	margin: 10px 10px 10px 10px;
+}
+#img_section2 {
+	float: right;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	opacity: 0.9;
+	margin: 10px 10px 10px 10px;
+}
+span {
+	font-size: small;
+	font-style: italic;
+}
+#section1_h3,
+#section2_h3 {
+	border: 1px solid #1ef1bd;
+	margin: auto;
+	background-color: #abfae6;
+	border-radius: 20px;
+	padding: 0.3em;
+	display: inline-block;
+}
+/* format tips.html */
+#tips_image {
+	background-image: url(images/tips_header.jpg);
+	background-size: 100% 100%;
+	height: 300px;
+	color: #21866d;
+	text-indent: 1em;
+	background-color: #1ef1bd;
+}
+/* format Pet_sitter.html */
+#dog_walkers {
+	background-image: url(images/dog_walk.jpg);
+	background-size: 100% 100%;
+	height: 300px;
+	color: #21866d;
+	text-indent: 1em;
+	background-color: #1ef1bd;
+}
+#table_fee {
+	text-align: center;
+	margin: auto;
+	border-collapse: collapse;
+}
+#table_fee .thead,
+#table_fee .tfoot {
+	background-color: lightgray;
+}
+#table_fee .tbody td {
+	padding: 3px 15px 3px 15px;
+	border-bottom: 1px dashed black;
+	border-right: 2px solid white;
+}
+#table_fee caption {
+	font-weight: bold;
+}
+#table_fee .tfoot td,
+.thead th {
+	border: 2px solid white;
+}
+/* format for register.html */
+#register_image {
+	background-image: url(images/register_header.jpg);
+	background-size: 100% 100%;
+	height: 300px;
+	color: #21866d;
+	text-indent: 1em;
+	background-color: #1ef1bd;
+}
+#cus_info input,
+datalist,
+select,
+textarea {
+	margin-top: 10px;
+}
+label {
+	text-align: left;
+	margin-top: 10px;
+}
+@media only screen and (max-width: 1024px) {
+	nav {
+		float: none;
+		width: auto;
+		margin: 0;
+	}
+	nav li {
+		display: inline-block;
+	}
+	main {
+		width: 70%;
+		margin-left: 10px;
+	}
+	#wrapper {
+		width: auto;
+	}
+	body {
+		margin: 0;
+	}
+	#float_left {
+		display: none;
+	}
+}
+@media only screen and (max-width: 768px) {
+	nav li {
+		display: block;
+	}
+	nav ul {
+		padding-left: 0;
+	}
+	nav a {
+		padding: 0;
+	}
+	nav {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.button {
+		font-size: 1em;
+		border: none;
+	}
+	#wrapper {
+		width: 100%;
+	}
+	main {
+		margin-left: 10px;
+		width: 95%;
+	}
+	#bkgroundimage {
+		background-image: none;
+		height: 0;
+	}
+	#float_right {
+		float: none;
+		width: 65%;
+	}
+}

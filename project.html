@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pets Lovers</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="pets.css">
+    <link rel="icon" href="images/favicon1.png" type="image/ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="home">
+            <h1>Welcome to Pet's House</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a class="button" href="project.html">Home</a></li>
+                <li><a class="button" href="Dogs.html">Dogs</a></li>
+                <li><a class="button" href="Cats.html">Cats</a></li>
+                <li><a class="button" href="Tips.html">Tips</a></li>
+                <li><a class="button" href="Pet_Sitter.html">Find a pet sitter</a></li>
+                <li><a class="button" href="Register.html">Registration</a></li>
+            </ul>
+        </nav>
+        <div id="float_left">
+            <article>
+                <h3>Article</h3>
+                <time datetime="2021-01-12">Jan 12, 2021</time>
+                Three dogs was recused from the forest: <br>"
+                According to their owner, He took a walk with three dogs
+                in the street near the forest. Then they run to the forest and disappeared.
+                Finally, after 2 days finding, they found them. All of them are good. "
+            </article>
+        </div>
+        <main>
+            <figure id="img_float_right">
+                <img src="images/friends.png" alt="pets are friends" height="300" width="200" id="petsAreFriends"
+                    onmouseover="overEffect()" onmouseout="outEffect()">
+                <figcaption>Pets are friends</figcaption>
+            </figure>
+            <h1>About Us</h1>
+            <ul>
+                <li><a href=" #intro">Introduction</a></li>
+                <li><a href="#recommend">Why people love petshouse.com</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+            <h2 id="intro">Introduction</h2>
+            Welcome to Pet's House. This is a website for people who love pets. In this website, you can find person
+            who can take care of your pets when you go to vacation or business trip.
+            If you are busy and cannot have time to take your petss go to park, don't worry. You can find dog walker
+            in this web. We are here to help you.
+            <h2 id="recommend">Why people love petshouse.com?</h2>
+            Every member in this website need to show a criminal background check when they apply. Therefore, don't
+            worry
+            about person who will take care your pets. They are good people and of course, they love pets.
+            <h2 id="contact">Contact us</h2>
+            Pet's House<br>
+            Address: 999 Victoria Drive, V5P 3W2, Vancouver, British Columbia, Canada<br>
+            Phone: <a href="tel:123456789">123-456-789</a><br>
+            Email: <a href="mailto:petshouse@gmail.com">petshouse@gmail.com</a><br>
+            Office Hours:<br>
+            Mon - Fri 8:00 AM - 9:00 PM<br>
+            Saturday 9:00 AM - 9:00 PM<br>
+            Sunday & Holidays 10:00 AM - 8:00 PM<br>
+        </main>
+        <div id="float_right">
+            <form method="get" id="sign_in">
+                <fieldset>
+                    <legend>Sign in</legend>
+                    <label for="email"> Email:</label><br>
+                    <input type="email" name="email" id="email" size="20" value="abc@gmail.com"
+                        placeholder="abc@gmail.com">
+                    <label for="password"> Password:</label>
+                    <input type="password" name="password" id="password" size="20" placeholder="password"><br>
+                    <input type="submit" value="Sign in" onclick="signIn()">
+                </fieldset>
+            </form>
+            <form method="get" id="newsletter">
+                <h3>Newsletter</h3>
+                <p> Get special articles and reviews. Subcribe today!
+                </p>
+                <input type="email" name="newsletter
+                        " id="newsletter1" size="20" placeholder="abc@gmail.com">
+                <input type="submit" value="Subcribe" onclick="subcribe()">
+            </form>
+            <h3 id="meter">Who visited us?</h3>
+            <meter value="500" min="1" max="1000"></meter> 500 Canadian<br>
+            <meter value="100" min="1" max="1000"></meter> 100 Idian<br>
+            <meter value="300" min="1" max="1000"></meter> 300 American
+            <h3 id="progress">How many pets are adopted?</h3>
+            <progress value="80" max="100"></progress> 80/100 pets
+        </div>
+        
+        <footer>
+            <hr>
+            <i>Name: Tuyet Khang Truong<br>
+                Student ID: 300324577<br>
+                Section: 004
+            </i>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

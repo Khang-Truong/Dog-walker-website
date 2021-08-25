@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pets Lovers</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="pets.css">
+    <link rel="icon" href="images/favicon1.png" type="image/ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="cats">
+            <h1>Welcome to pets house</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a class="button" href="project.html">Home</a></li>
+                <li><a class="button" href="Dogs.html">Dogs</a></li>
+                <li><a class="button" href="Cats.html">Cats</a></li>
+                <li><a class="button" href="Tips.html">Tips</a></li>
+                <li><a class="button" href="Pet_Sitter.html">Find a pet sitter</a></li>
+                <li><a class="button" href="Register.html">Registration</a></li>
+            </ul>
+        </nav>
+        <div id="float_left">
+            <article>
+                <h3>Article</h3>
+                <time datetime="2021-01-12">Jan 12, 2021</time>
+                Three dogs was recused from the forest: <br>"
+                According to their owner, He took a walk with three dogs
+                in the street near the forest. Then they run to the forest and disappeared.
+                Finally, after 2 days finding, they found them. All of them are good. "
+            </article>
+        </div>
+
+        <main>
+            <section id="section1">
+                <figure id="img_section1">
+                    <img src="images/two_cat.jpg" alt="twoCats" height="200" width="200"
+                        onmouseenter="onmouseTwoCat_bigImg()" onmouseleave="onmouseTwoCat_normalImg()" id="twoCat">
+                    <figcaption>Ad ID#: 0001</figcaption>
+                </figure>
+                <h3 id="section1_h3">Ad ID#: 0001</h3><br>
+                <span>Posted 2 days ago.</span>
+                <p>Hello everyone, please meet Kathy and Anna!
+                    They need to be adopted together. </p>
+                <ul>
+                    <li>Kathy is younger than Anna. She loves to climb up the cat's house, play with balls, and mouse
+                        toys.</li>
+                    <li>Anna is an introverted cat. She likes to lie in the sofa and see people on the street.
+                        Besides, she likes eating salmon with broccoli.</li>
+                </ul>
+            </section>
+            <hr>
+            <section id="section2">
+                <figure id="img_section2">
+                    <img src="images/aCat.jpg" alt="A_Cat" height="200" width="200"
+                        onmouseenter="onmouseaCat_bigImg()" onmouseleave="onmouseaCat_normalImg()" id="aCat">
+                    <figcaption>Ad ID#: 0002</figcaption>
+                </figure>
+                <h3 id="section2_h3">Ad ID#: 0002</h3><br>
+                <span>Posted 5 days ago.</span>
+                <p>Hi everyone, I need to find a new house for my cat. Her name is Mary. She is shy.
+                    In the room kittens, she always hide in the corner out of sight.
+                    Mary will need a person who have experience about cats to adopt her. </p>
+
+                <p>Please only contact if you're serious in my
+                    cat and ready to give her
+                    a forever home with you. Please be patient with Mary. She is a cute cat.</p>
+            </section>
+        </main>
+        <div id="float_right">
+            <form method="get" id="sign_in">
+                <fieldset>
+                    <legend>Sign in</legend>
+                    <label for="email"> Email:</label>
+                    <input type="email" name="email" id="email" size="20" value="abc@gmail.com"
+                        placeholder="abc@gmail.com"><br>
+                    <label for="password"> Password:</label>
+                    <input type="password" name="password" id="password" size="20" placeholder="password"><br>
+                    <input type="submit" value="Sign in" onclick="signIn()">
+                </fieldset>
+            </form>
+            <form method="get" id="newsletter">
+                <h3>Newsletter</h3>
+                <p> Get special articles and reviews. Subcribe today!
+                </p>
+                <input type="email" name="newsletter
+                        " id="newsletter1" size="20" placeholder="abc@gmail.com">
+                <input type="submit" value="Subcribe" onclick="subcribe()">
+            </form>
+        </div>
+
+        <footer>
+            <hr>
+            <i>Name: Tuyet Khang Truong<br>
+                Student ID: 300324577<br>
+                Section: 004
+            </i>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
