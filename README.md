@@ -17,7 +17,7 @@
 - Javascript
 
 # How To Run It 
-- Install the Visual Studio Code + Live Server Extension
+- Install the [Visual Studio Code](https://code.visualstudio.com/download) + Live Server Extension
 - Download this project -> unzip
 - In Visual Studio Code, click to File -> Open folder -> select the folder that you unziped
 - Click Project.html file -> right click and select Open Live Server
