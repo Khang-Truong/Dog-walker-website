@@ -1,7 +1,7 @@
 # Dog-walker-website
 # Introduction
-This is a project in the Multimedia Web Development course. 
-In this website, users can adopt pets, get tips, and find dog walkers or pet sitters.
+- This is a project in the Multimedia Web Development course. 
+- In this website, users can adopt pets, get tips, and find dog walkers or pet sitters.
 
 # Some Pictures About The Project
 ![home_page](https://user-images.githubusercontent.com/62549740/166127976-5f2d33df-d098-424e-85db-908a5fcfacac.jpeg)
